@@ -9,7 +9,9 @@ class Person{
         this.age = parseInt(age);
     }
     greet(){
-        console.log(`Hello, my name is ${this.name}, and I am ${this.age} years old.`);
+		let message1 = `Hello, my name is ${this.name}, and I am ${this.age} years old`
+		let mess2 = "."
+        console.log(message1+mess2);
     }
     
 }
@@ -23,7 +25,7 @@ class Employee extends Person{
     }
 
     jobGreet(){        
-        return super.greet();
+        console.log(`Hello, my name is ${this.name}, and I am ${this.age} years old, and my job title is ${this.jobTitle}.`);
     }
 }
 
